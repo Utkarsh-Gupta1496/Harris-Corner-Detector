@@ -26,8 +26,8 @@ def sobel_filters(img):
     theta = np.arctan2(Iy, Ix)
     return (Ix,Iy)
 
-img=cv2.imread('PCB.jpg',0)
-img11=cv2.imread('PCB.jpg')
+img=cv2.imread('.images/PCB.jpg',0)
+img11=cv2.imread('.images/PCB.jpg')
 img=np.asarray(img,np.float32)
 
 Ix,Iy=sobel_filters(img)
